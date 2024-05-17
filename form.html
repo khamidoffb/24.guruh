@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .night {
+            background-color: #3e3e3e;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORMA</h1>
+
+    <form action="table.html" method="POST">
+        <label for="ism">Ismingiz</label>
+        <input id="ism" type="text" name="ismi" placeholder="Ismingizni yozing" 
+        value="Bobur" required>
+        <hr>
+        <input type="text" readonly name="site" value="https://kun.uz" disabled hidden>
+        <hr>
+        <fieldset>
+            <legend>Imtixon savollari</legend>
+            <p>Biz kurs davomida qanaqa tillarni o'rganamiz???</p>
+            <input type="checkbox" name="tillar" value="html" id="html">
+            <label for="html">HTML</label> <br>
+            <input type="checkbox" name="tillar" id="css" value="css">
+            <label for="css">CSS</label> <br>
+            <input type="checkbox" name="tillar" id="js" value="js">
+            <label for="js">JS</label> <br>
+            <input type="checkbox" name="tillar" id="php" value="php">
+            <label for="php">PHP</label>
+            <hr>
+            <p>Biz kurs davomida qanaqa dasturlash tilini o'rganamiz???</p>
+            <input type="radio" name="til" value="html" id="html2">
+            <label for="html2">HTML</label><br>
+            <input type="radio" name="til" value="css" id="css2">
+            <label for="css2">CSS</label><br>
+            <input type="radio" name="til" value="js" id="js2">
+            <label for="js2">JS</label><br>
+            <input type="radio" name="til" value="php" id="php2">
+            <label for="php2">PHP</label><br>
+        </fieldset>
+        <hr>
+        <select name="vil" id="vil">
+            <option value="null">Viloyatni tanlang</option>
+            <option value="sam">Samarqand</option>
+            <option value="tas">Toshkent</option>
+            <option value="jiz">Jizzax</option>
+            <option value="sir">Sirdaryo</option>
+            <option value="kharezm">Xorazm</option>
+        </select>
+
+        <hr>
+        <textarea name="" cols="50" rows="3" id=""></textarea>
+        <hr>
+        <input type="text" list="cars">
+        <datalist id="cars">
+            <option value="Malibu">
+            <option value="Spark">
+            <option value="Neksiya">
+            <option value="Cobalt">
+        </datalist>
+        <hr>
+        <!-- <input type="submit" value="Yuborish"> -->
+        <button type="submit">Yuborish</button>
+        <button type="reset">Tozalash</button>
+        <button type="button">Knopka</button>
+        <button type="button" id="night"> Night </button>
+        <!-- <button>Test</button> -->
+    </form>
+
+    <hr>
+
+
+    <script>
+        document.querySelector('#night').onclick = () => {
+            document.body.classList.toggle('night')
+        }
+    </script>
+
+</body>
+
+</html>
